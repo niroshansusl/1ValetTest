@@ -21,6 +21,7 @@ class DeviceListAdapter : RecyclerView.Adapter<DeviceListAdapter.ViewHolder>(), 
 
     fun updateData(data: ArrayList<DeviceList>) {
         deviceListFiltered.clear()
+        deviceList.clear()
         this.deviceListFiltered.addAll(data)
         this.deviceList.addAll(data)
         notifyDataSetChanged()
